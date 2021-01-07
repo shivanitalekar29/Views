@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table border='1'>
+      <tbody>
+        <thead>
+          <th><h1>Number</h1></th>
+          <th><h1>Name</h1></th>
+          <th><h1>Age</h1></th>
+          <th><h1>City</h1></th>
+          <th><h1>Update</h1></th>
+        </thead>
+        {% for i in student_list %}
+        <tr>
+          <td><h1>{{i.sno}}</h1></td>
+          <td><h1>{{i.sname}}</h1></td>
+          <td><h1>{{i.sage}}</h1></td>
+          <td><h1>{{i.scity}}</h1></td>
+          <td><a href="/update/{{i.pk}}">update</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
